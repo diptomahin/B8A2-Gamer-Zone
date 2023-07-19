@@ -1,6 +1,6 @@
 *{
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
@@ -12,16 +12,16 @@
 /* Nav bar styles */
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding-top: 44px;
-    padding-bottom: 46px;
+    padding: 20px 80px 20px 80px;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
 .nav-logo-container{
     display: flex;
-    gap: 20px;
+    gap: 10px;
+    align-items: center;
 }
 .nav-menu-container ul{
 
@@ -30,71 +30,94 @@ nav{
 }
 .nav-menu-container ul li{
     list-style: none;
-    margin-right: 30px;
+    margin-right: 20px;
 }
-.nav-logo-img{
-    width: 86.041px;
-    height: 40px;
+.logo{
+    width: 45px ;
+    height: 25px;
+}
 
-}
 .nav-title-text{
     color: #0B0223;
     text-align: center;
-    font-size: 45px;
+    font-size: 25px;
     font-weight: 700;
 }
 .nav-icon-container{
     display: flex;
     justify-content: space-around;
-    gap: 24px ;
-    padding: 18px 24px ;
+    gap: 12px ;
+    padding: 9px 12px ;
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
 }
+.menu-items{
+    color: #3C354F;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+}
 .nav-icon{
-    width: 33.916px;
-    height: 24px;
+    width: 20px;
+    height: 15px;
 }
  /* Banner section style */
 
 .banner-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    padding-left: 120px;
+   
 }
 .banner-text-container{
     width: 50%;
-    padding-top: 148px;
-    padding-left: 244px;
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
  
 }
 .banner-heading{
     color: #0B0223;
-    font-size: 48px;
+    font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
 }
 .goat{
-    color: #FF42A5;
-    font-size: 95px;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 47px;
     font-weight: 800;
     text-transform: uppercase;
+    margin-bottom: 12px;
 }
 .banner-text{
+   
     color: #534C64;
-    font-size: 20px; 
+    font-size: 12px; 
     font-weight: 500;
     text-transform: lowercase;
 }
+.banner-p-text{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 8px;
+    margin-bottom: 20px;
+}
+.text-img{
+    width: 12px ;
+    height: 12px ;
+}
 .banner-btn{
     color: #FFF;
-    font-size: 20px;
+    font-size: 10px;
     font-weight: 600;
     text-transform: uppercase;
     border-radius: 48px;
     background-color: #FF42A5;
-    padding: 21px 40px;
+    padding: 15px 25px;
     border: 0;
 }
 .btn-two{
@@ -103,9 +126,84 @@ nav{
 .banner-button-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    gap: 12px;
 }
 .banner-img-container{
     display: grid;
     grid-template-columns: repeat(1,1fr);
+}
+.banner-img-1{
+    width: 350px;
+    height: 220px ;
+}
+.small-banner-img{
+    display: grid;
+    grid-template-columns: repeat(2, 0.40fr);
+}
+.banner-img-2{
+    width: 100px;
+    height: 100px ;
+
+}
+.banner-img-3{
+    width: 180px;
+    height: 115px ;
+    
+}
+
+/* Know section  more style */
+.know-more{
+    padding-top: 95px;
+    padding-left: 120px;
+    padding-right: 120px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.know-more-img{
+    width: 434px;
+    height: 244px;
+    /* padding-left: 120px; */
+
+}
+.Know-more-text-container{
+    text-align: right;
+}
+.know-more-header{
+    font-size: 24px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+.Know-more-descreption{
+    color: #534C64;;
+    font-size: 10px;
+   font-weight: 400;
+   margin-bottom: 15px;
+}
+.know-more-btn{
+    color: #FFF;
+    background-color: #FF42A5;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    border-radius: 48px;
+    border: 0;
+    margin-bottom: 12px;
+}
+.our-purpose{
+    color: #534C64;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+}
+.unleash{
+    color: #534C64;
+font-size: 16px;;
+font-weight: 700;
+
 }
