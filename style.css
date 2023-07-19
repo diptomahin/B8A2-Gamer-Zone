@@ -650,5 +650,8 @@ nav {
     .footer-menu-conatiner{
         grid-template-columns: repeat(3, 1fr);
     }
+    .footer-img-container{
+        
+    }
 }      
   
