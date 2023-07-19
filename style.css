@@ -14,7 +14,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 80px 20px 80px;
+    padding: 20px 80px 20px 120px;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
@@ -205,5 +205,83 @@ nav{
     color: #534C64;
 font-size: 16px;;
 font-weight: 700;
+
+}
+
+/* Online games section style */
+.online-games-header{
+    color: #0B0223;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+.online-games-description{
+    color: #534C64;
+text-align: center;
+font-size: 18px;
+font-weight: 400;
+}
+.game-box-container{
+    padding-left: 120px;
+    padding-right: 120px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 24px;
+}
+
+.game-box-img{
+    width: 171px;
+    height: 200px;
+    border-radius: 8px;
+}
+.game-box-img:hover{
+    cursor: pointer;
+    border-radius: 8px;
+     background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat; 
+}
+.game-box-text{
+    padding-top: 12px;
+    color: #534C64;
+    font-size: 10px;
+    font-weight: 500;
+    width: 171px;
+}
+/* play instantly section styles */
+.play-instantly{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 132px;
+    padding-top: 60px;
+}
+.play-instantly-text-cintainer{
+      text-align: right;
+      padding-top: 75px;
+}
+.play-instantly-header{
+    text-align: right; 
+    font-size: 24px;
+    font-weight: 700;
+
+}
+.play-instantly-description{
+
+}
+.play-instantly-img-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+#big-img{
+    width: 317px;
+    height: 325px;
+  
+}
+#small-img{
+    width: 159px;
+   height: 184px;
+   position: relative;
+   bottom: 140px;
+   right: 80px;
 
 }
