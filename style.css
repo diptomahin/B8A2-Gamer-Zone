@@ -74,6 +74,7 @@ nav {
 /* Banner section style */
 
 .banner-container {
+    /* visibility: hidden; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 100px;
@@ -177,6 +178,7 @@ nav {
 
 /* Know section  more style */
 .know-more {
+    /* visibility: hidden; */
     padding-top: 95px;
     padding-left: 120px;
     padding-right: 120px;
@@ -291,7 +293,7 @@ nav {
 
 /* play instantly section styles */
 .play-instantly {
-    /* visibil ity: hidden; */
+    /* visibility: hidden; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 132px;
@@ -335,8 +337,6 @@ nav {
 .game-catagories {
     /* visibility: hidden; */
     padding-bottom: 73px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
 
 }
 
@@ -354,16 +354,6 @@ nav {
 
 }
 
-.game-catagories-list-2 {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: space-around;
-    padding-left: 162px;
-    padding-right: 162px;
-
-
-}
 
 .game-catagories-items {
 
@@ -376,6 +366,11 @@ nav {
 
 
 }
+.second-row-games{
+    position: relative;
+    top: 40px;
+    left: 70px;
+}
 
 .game-catagories-items:hover {
     cursor: pointer;
@@ -383,11 +378,9 @@ nav {
     background: #FFF;
     font-size: 15px;
     font-weight: 600;
-    color: #FF42A5;
     border: 2px solid #FF42A5;
     padding: 10px 10px;
 }
-
 .list-img {
     width: 30px;
     height: 30px;
@@ -398,6 +391,9 @@ nav {
     font-size: 15px;
     font-weight: 600;
 
+}
+.list-name:hover{
+    color: #FF42A5;
 }
 
 /* footerstyles */
@@ -479,17 +475,19 @@ nav {
     font-weight: 500;
     padding-top: 15px;
     padding-bottom: 70px;
-    l
+    
 }
+
 /* small device style */
 @media screen and (max-width: 576px) {
     *{
-   
+    
     }
      /* nav style */
      nav{
         flex-direction: column;
-        padding-left: 120px;
+        padding: 30px 140px 30px 140px;
+        
      }
      .nav-menu-container ul{
         flex-direction: column;
@@ -509,12 +507,15 @@ nav {
      }
      /* banner syle */
      .banner-container{
-           grid-template-columns: repeat(1,1fr);
-           padding: 0px;
+           display: flex;
+           flex-direction: column-reverse;
+           align-items: center;
+           padding: 0;
+
      }
      .banner-text-container{
         text-align: center;
-        padding-left: 70px;
+        padding: 0px;
     
      }
      .banner-p-text{
@@ -525,7 +526,8 @@ nav {
         width: 110px;
      }
      .banner-img-container{
-        padding-left: 30px;
+        padding-top: 50px;
+        padding-left: 0px;
        
      }
      .banner-img-1{
@@ -544,13 +546,16 @@ nav {
         height: 135.018px;
     
      }
+     /* know more styles */
      .know-more{
          grid-template-columns: repeat(1, 1fr);
          padding: 0;
               
      }
      .know-more-img{
-        padding-left: 20px;
+        padding-top: 18px;
+        padding-left: 90px;
+        padding-bottom: 31;
         width: 250px;
         height: 180px;
      }
@@ -565,14 +570,36 @@ nav {
         align-items: center;
         justify-content: space-around;
     }
+    .online-games-header{
+        font-size: 20px;
+    }
+    .resize-header{
+        font-size: 20px;
+    }
+    .online-games-description{
+         font-size: 8px;
+    }
     .game-box{
         padding-top: 20px;
         padding-bottom: 20px;
     }
+    .game-box-img{
+        width: 250px;
+        height: 250px;
+        border-radius: 8px;
+    }
+    .game-box-text{
+        font-size: 10px;
+        width: 250px;
+    }
+    /* play instanntly section styles */
     .play-instantly{
         grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        padding-top: 0px;
        
     }
+    
     .play-instantly-text-cintainer{
         text-align: center;
     }
@@ -584,7 +611,7 @@ nav {
         font-size: 10px;
     }
     .play-instantly-img-container{
-        padding-left: 80px;
+        padding-left: 120px;
     }
         
     #big-img{
@@ -598,27 +625,37 @@ nav {
     position: relative;
     bottom: 80px;
     right:20px;
+    }
+    /* game .game-catagories */
+    .game-catagories{
 
-
+    
+        /* visibility: hidden; */
     }
     .game-catagories-list-1  {
-        grid-template-columns: repeat(2, 1fr);
-        padding-left: 0;
-        padding-right: 0;
-        gap:0;
-        
-    }
-    .game-catagories-list-2{
-        grid-template-columns: repeat(2, 1fr);
-        padding-left: 0;
-        padding-right: 0;
-        gap: 0;
+        grid-template-columns: repeat(3, 40px); 
+        gap:0px;
+        padding-left: 0px;
+        padding-right: 0px;
+
+        /* padding-right: 80px;    */
     }
     .game-catagories-items{
-        
+          position: relative;
+          right: 20px;
+          width: 90px;
+          gap: 5px;
+
     }
+    .second-row-games{
+        position: relative;
+        top: 0px;
+        left:-20px;     
+    }
+
     .list-name{
         font-size: 8px;
+        width: fit-content;
     }
     
     .list-img {
@@ -631,27 +668,47 @@ nav {
         background: #FFF;
         font-size: 8px;
         font-weight: 600;
-        color: #FF42A5;
         border: 2px solid #FF42A5;
-        padding: 10px 10px;
+        padding: 5px 5px;
+      
     }
-    .hideen{
-        visibility: hidden;
-    }
-    .game-catagories{
-        text-align: center;
-        width: 100%;
-        height: 180px;
-        
-    }
+    
+    /* footer section styles */
     .footer{
-        width: 100%;
+       
+    }
+    .footer-header{
+        padding-top: 70px;
     }
     .footer-menu-conatiner{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 100px);
+        padding: 0px;
+        padding-top: 20px;
+        padding-left: 70px;
+    }
+    .footer-menu{
+        padding-top: 18px;
+        padding-bottom: 18px;
     }
     .footer-img-container{
-        
+        grid-template-columns: repeat(3,20px);
+        gap: 30px;
+        padding: 0;
+        padding-top: 40px;
+        padding-left: 150px;
+    }
+    .terms-container{
+        grid-template-columns: repeat(2, 150px);
+        padding: 0;
+        padding-top: 40px;
+        padding-left: 70px;
+    }
+    .terms-menu{
+        padding-bottom: 17px;
+
+    }
+    .copy-right{
+           padding-top: 30px;
     }
 }      
   
